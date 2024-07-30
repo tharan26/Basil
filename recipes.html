@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="recipes.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Assets/logo.png" alt="Basil" style="width: 150px; height: 150px;">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="icon"><i class="fa-solid fa-user"></i>
+            <div class="dropdown-content">
+                <a href="login.html">Logout</a>
+                <a href="#help">Help</a>
+            </div>
+        </div>
+    </header>
+    <div class="recipes">
+      <div>
+      <a href="salmon.html"><img src="Assets/Teriyaki.jpg" alt="" class="recipe">
+      <h2 class="text1">Teriyaki Salmon</h2></a>
+      </div>
+      <div>
+      <a href="tikka.html"><img src="Assets/tikka.jpg" alt="" class="recipe">
+      <h2 class="text1">Chicken Tikka Masala</h2></a>
+      </div>
+      <div>
+      <a href="burger.html"><img src="Assets/Burger1.jpg" alt="" class="recipe">
+      <h2 class="text1">American Burger</h2></a>
+      </div>
+  </div>
+  <div class="more">
+    <button>Discover More</button>
+  </div>
+  <div>
+    <footer>
+        <div><h1><a href="index.html">Basil</a></h1></div>
+        <div class="fd">
+            <ul>
+                <li class="lhead1" style="font-weight: bold;">HELP</li>
+                <li><a href="">MEMBERS LOGIN</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">SHIPPING</a></li>
+                <li><a href="">TERM</a></li>
+            </ul>
+            <ul>
+                <li class="lhead2" style="font-weight: bold;">COMPANY</li>
+                <li><a href="">STORY</a></li>
+                <li><a href="">CAREERS</a></li>
+                <li><a href="">CONTACT US</a></li>
+                <li><a href="">COLLABORATIONS</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="foot2">
+    <footer>
+        <h4>CONNECT</h4>
+        <ul>
+            <li><a href="">INSTAGRAM</a></li>
+            <li><a href="">LINKEDIN</a></li>
+            <li><a href="">X</a></li>
+        </ul>
+    </footer>
+    </div>
+    <script>
+        document.querySelector('.icon').addEventListener('click', function() {
+            document.querySelector('.dropdown-content').classList.toggle('show');
+        });
+        window.onclick = function(event) {
+            if (!event.target.matches('.fa-user')) {
+                var dropdowns = document.getElementsByClassName('dropdown-content');
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</div>
+    <!-- Chatbot UI -->
+    <div class="chatbot-container">
+        <div class="chat-header">
+            <h3>Basil Chatbot</h3>
+            <button id="close-chatbot"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="user-input" placeholder="Type a message...">
+            <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Chatbot Toggle Button -->
+    <button id="chatbot-toggle" class="chatbot-toggle"><i class="fas fa-comments"></i></button>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>

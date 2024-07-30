@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+    <link rel="stylesheet" href="recipe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="Assets/logo.png" alt=""></a>
+          <h1 class="title1">Recipe</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars" id="icon"></i>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Basil</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="recipes.html">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <img src="Assets/Teriyaki Salmon.jpg" class="img-fluid" alt="Teriyaki Salmon">
+      <h1 class="name">Teriyaki Salmon</h1>
+      <div class="content">
+
+ <h1>Ingredients:</h1>
+ <pre>
+    - 4 salmon fillets
+    - 1/2 cup soy sauce
+    - 1/4 cup mirin (sweet rice wine)
+    - 1/4 cup sake
+    - 2 tbsp brown sugar
+    - 1 tbsp vegetable oil
+    - 2 green onions, chopped
+    - Sesame seeds for garnish
+</pre>
+<h1>Instructions:</h1>
+<pre>
+    1. In a bowl, mix the soy sauce, mirin, sake, and brown sugar.
+    2. Marinate the salmon fillets in the mixture for at least 30 minutes.
+    3. Heat the vegetable oil in a pan over medium heat. Remove the salmon from the marinade and cook until browned and cooked through.
+    4. In a separate pan, heat the marinade until it thickens slightly.
+    5. Serve the salmon with the sauce poured over it, garnished with green onions and sesame seeds.
+
+
+Enjoy your flavorful Teriyaki Salmon!
+</pre>
+</div>
+          <!-- Chatbot UI -->
+    <div class="chatbot-container">
+      <div class="chat-header">
+          <h3>Basil Chatbot</h3>
+          <button id="close-chatbot"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="chat-body" id="chat-body">
+          <!-- Chat messages will appear here -->
+      </div>
+      <div class="chat-footer">
+          <input type="text" id="user-input" placeholder="Type a message...">
+          <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+      </div>
+  </div>
+
+  <!-- Chatbot Toggle Button -->
+  <button id="chatbot-toggle" class="chatbot-toggle"><i class="fas fa-comments"></i></button>
+
+  <script src="chatbot.js"></script>
+</body>
+</html>

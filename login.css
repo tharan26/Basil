@@ -1,0 +1,394 @@
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lekton-regular {
+    font-family: "Lekton", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lekton-bold {
+    font-family: "Lekton", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lekton-regular-italic {
+    font-family: "Lekton", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.image{
+  height: 350px;
+  width: 350px;
+  margin-left: 40%;
+}
+
+.container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+form{
+    font-family: "Lekton", monospace;
+    border: 2px transparent;
+    border-radius: 5px;
+    height: 25rem;
+    width: 25rem;
+    padding: 20px;
+    box-shadow: 0.5px 0.5px 8px #808080;
+    background-color: bisque;
+}
+
+.sign{
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 5px;
+    color: brown;
+}
+  
+.user{
+    padding-top: 20px;
+}
+
+.user input{
+    margin-left: 25px;
+    text-align: center;
+    font-family: "Lekton", monospace;
+    border: 1px solid brown;
+    border-radius: 5px;
+    width: 20rem;
+    padding: 8px;
+}
+
+.pass{
+    padding-top: 25px;
+}
+
+.pass input{
+    text-align: center;
+    margin-left: 25px;
+    font-family: "Lekton", monospace;
+    border: 1px solid brown;
+    border-radius: 5px;
+    width: 20rem;
+    padding: 8px;
+}
+
+.check{
+  padding-left: 10px;
+    padding-top: 25px;
+}
+
+.rm{
+    padding-top: 25px;
+}
+
+.fp{
+  text-decoration: none;
+  padding-left: 150px;
+}
+
+.login1{
+    padding-top: 25px;
+    text-align: center;
+
+}
+
+.login1 button{
+    width: 20rem;
+    height: 30px;
+    cursor: pointer;
+    background-color: brown;
+    color: bisque;
+    border-radius: 5px;
+    border: none;
+}
+
+.login1 button:hover{
+    background-color: white;
+    color: brown;
+    border:1px solid brown;
+    font-family: "Lekton", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.sign1{
+    padding-top: 25px;
+    text-align: center;
+    position: relative;
+
+}
+
+.sign1::before{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 1px;
+    background: #000;
+    left: 0;
+    top: 2.5rem;
+    position: absolute;
+}
+
+.sign1::after{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 1px;
+    background: #000;
+    right: 0;
+    top: 2.5rem;
+    position: absolute;
+}
+.icons
+{
+    text-align: center;
+    padding-top: 10px;
+    color: brown;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.icons i{
+    padding: 10px;
+}
+.signup{
+    text-align: center;
+    padding-top: 1px;
+}
+
+
+.foot2 footer{
+  display: flex;
+  background-color: bisque;
+  padding: 5px;
+  margin-top: 82px;
+}
+
+.foot2 h4{
+  padding-left: 20px;
+}
+
+.foot2 ul{
+  display: flex;
+  position: absolute;
+  left: 85%;
+  transform: translateX(-50%);
+  list-style-type: none;
+}
+
+.foot2 a{
+  padding: 10px;
+  text-decoration: none;
+  color: brown;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+  body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.image{
+  height: 350px;
+  width: 350px;
+  margin-left: 10px;
+}
+
+
+.container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+form{
+    font-family: "Lekton", monospace;
+    border: 2px transparent;
+    border-radius: 5px;
+    margin-left: 2px;
+    height: 25rem;
+    width: 20rem;
+    padding: 20px;
+    box-shadow: 0.5px 0.5px 8px #808080;
+    background-color: bisque;
+    margin-bottom: 50px;
+}
+
+.sign{
+  text-align: center;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 5px;
+    color: brown;
+}
+  
+.user{
+    padding-top: 20px;
+}
+
+.user input{
+    margin-left: 40px;
+    text-align: center;
+    font-family: "Lekton", monospace;
+    border: 1px solid brown;
+    border-radius: 5px;
+    width: 15rem;
+    padding: 5px;
+}
+
+.pass{
+    padding-top: 25px;
+}
+
+.pass input{
+    text-align: center;
+    margin-left: 40px;
+    font-family: "Lekton", monospace;
+    border: 1px solid brown;
+    border-radius: 5px;
+    width: 15rem;
+    padding: 5px;
+}
+
+.check{
+  padding-left: 10px;
+    padding-top: 25px;
+}
+
+.rm{
+    padding-top: 25px;
+}
+
+.fp{
+  text-decoration: none;
+  padding-left: 60px;
+}
+
+
+.login1{
+    padding-top: 25px;
+    text-align: center;
+
+}
+
+.login1 button{
+    width: 20rem;
+    height: 30px;
+    cursor: pointer;
+    background-color: brown;
+    color: bisque;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.login1 button:hover{
+    background-color: white;
+    color: brown;
+    border:1px solid brown;
+    font-family: "Lekton", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.sign1{
+    padding-top: 25px;
+    text-align: center;
+    position: relative;
+
+}
+
+.sign1::before{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background: #000;
+    left: 0;
+    top: 2.5rem;
+    position: absolute;
+}
+
+.sign1::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background: #000;
+    right: 0;
+    top: 2.5rem;
+    position: absolute;
+}
+.icons
+{
+    text-align: center;
+    padding-top: 10px;
+    color: brown;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.icons i{
+    padding: 10px;
+}
+.signup{
+    text-align: center;
+    padding-top: 1px;
+}
+
+.foot2 footer{
+  display: flex;
+  background-color: bisque;
+  padding: 2px;
+}
+
+.foot2 h4{
+  padding-left: 20px;
+}
+
+.foot2 ul{
+  display: flex;
+  position: absolute;
+  left: 60%;
+  transform: translateX(-50%);
+  list-style-type: none;
+}
+
+.foot2 a{
+  padding: 5px;
+  text-decoration: none;
+  color: brown;
+}
+
+
+}
